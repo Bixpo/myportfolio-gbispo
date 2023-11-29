@@ -26,7 +26,7 @@ const About = () => {
           <p>
             Olá! meu nome é Gabriel Da Cruz Bispo e gosto de criar coisas que
             vivem na internet. Meu interesse em desenvolvimento web começou em
-            2018, quando decidi descobrir como é feito sites da internet e suas
+            2018,<br></br>quando decidi descobrir como é feito sites da internet e suas
             animações isso fez com que eu busca-se aprender mais sobre essa área
             e sobre como é desenvolver algo próprio e de seu jeito.
           </p>
@@ -39,7 +39,7 @@ const About = () => {
           </p>
           <p>
             Sempre estou buscando ficar por dentro de atualizações de
-            bibliotecas de software para sempre estar por dentro das {""}
+            bibliotecas de<br />software para sempre estar por dentro das {""}
             <span className="text-textGreen">
               atualizações das linguagens de programação.
             </span>
@@ -48,7 +48,7 @@ const About = () => {
             Aqui estão algumas tecnologias com as quais tenho trabalhado
             recentemente:
           </p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
+          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-1 mt-2">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <RiJavascriptFill />
@@ -111,18 +111,14 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
-          <div className="absolute w-full h-80 -left-0.50 -top-10 rounded-lg">
+        <div className="w-full lgl:w-1/4 h-80 relative group">
+          <div className="absolute w-full h-80 -left-0.50 -top-1 -right-8 rounded-lg">
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
               <Image
                 className="rounded-lg h-full object-cover"
                 src={gabriel}
                 alt="profileImg"
               />
-              <div
-                className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/5
-               rounded-md top-0 left-0 group-hover:bg-transparent duration-300"
-              ></div>
             </div>
           </div>
         </div>
