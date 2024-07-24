@@ -1,35 +1,29 @@
 import { gb } from "@/public/assets";
-
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { motion } from "framer-motion";
-
 import { MdOutlineClose } from "react-icons/md";
 import { LuGithub } from "react-icons/lu";
 import { SlSocialLinkedin, SlSocialInstagram } from "react-icons/sl";
 import { FaTwitch } from "react-icons/fa";
 
 const Navbar = () => {
-  const ref = useRef<string | any>("");
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const [showMenu, setShowMenu] = useState(false);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-
     setShowMenu(false);
 
     const href = e.currentTarget.href;
-
     const targetId = href.replace(/.*\#/, "");
-
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: "smooth",
     });
-    // Update the class name of the clicked link
+
     const links = document.querySelectorAll(".nav-link");
     links.forEach((link) => {
       link.classList.remove("active");
@@ -39,7 +33,6 @@ const Navbar = () => {
 
   function handlClick(e: any) {
     if (e.target.contains(ref.current)) {
-      // do something with myRef.current
       setShowMenu(false);
     }
   }
@@ -154,7 +147,9 @@ const Navbar = () => {
         </div>
         {showMenu && (
           <div
-            ref={(node) => (ref.current = node)}
+            ref={(node) => {
+              ref.current = node;
+            }}
             onClick={handlClick}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col
             items-end"
@@ -220,7 +215,7 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
                         duration: 0.2,
-                        delay: 0.3,
+                        delay: 0.2,
                         ease: "easeIn",
                       }}
                     >
@@ -238,7 +233,7 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
                         duration: 0.2,
-                        delay: 0.4,
+                        delay: 0.2,
                         ease: "easeIn",
                       }}
                     >
@@ -256,7 +251,7 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{
                         duration: 0.2,
-                        delay: 0.5,
+                        delay: 0.2,
                         ease: "easeIn",
                       }}
                     >
@@ -269,84 +264,67 @@ const Navbar = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, ease: "easeIn" }}
-                    className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen
-                    hover:bg-hoverColor duration-300"
+                    className="px-4 py-2 rounded-md text-textGreen text-[13] border border-textGreen
+                  hover:bg-hoverColor duration-300"
                   >
                     Resume
                   </motion.button>
                 </a>
                 <div className="flex gap-4">
                   <motion.a
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1, ease: "easeIn" }}
                     href="https://github.com/Bixpo"
                     target="_blank"
                   >
-                    <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
-                      hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center
-                      hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300"
-                    >
+                    <span className="w-10 h-10 text-xl bg-hoverColor border-[1px] border-textGreen rounded-full inline-flex
+                  items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+                  transition-all duration-300">
                       <LuGithub />
                     </span>
                   </motion.a>
                   <motion.a
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, ease: "easeIn" }}
-                    href="https://www.linkedin.com/in/gabriel-bispo-0241a0292/"
+                    transition={{ delay: 1.2, ease: "easeIn" }}
+                    href="https://www.linkedin.com/in/gabriel-bispo-684b86238/"
                     target="_blank"
                   >
-                    <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
-                      hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center
-                      hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300"
-                    >
+                    <span className="w-10 h-10 text-xl bg-hoverColor border-[1px] border-textGreen rounded-full inline-flex
+                  items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+                  transition-all duration-300">
                       <SlSocialLinkedin />
                     </span>
                   </motion.a>
                   <motion.a
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, ease: "easeIn" }}
-                    href="https://instagram.com/bixpo_bixpo?igshid=OGQ5ZDc2ODk2ZA=="
+                    transition={{ delay: 1.4, ease: "easeIn" }}
+                    href="https://www.instagram.com/bispo.gabriel/"
                     target="_blank"
                   >
-                    <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
-                      hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center
-                      hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300"
-                    >
+                    <span className="w-10 h-10 text-xl bg-hoverColor border-[1px] border-textGreen rounded-full inline-flex
+                  items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+                  transition-all duration-300">
                       <SlSocialInstagram />
                     </span>
                   </motion.a>
                   <motion.a
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, ease: "easeIn" }}
-                    href="https://www.twitch.tv/bixpo_bixpo"
+                    transition={{ delay: 1.6, ease: "easeIn" }}
+                    href="https://www.twitch.tv/"
                     target="_blank"
                   >
-                    <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
-                      hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center
-                      hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300"
-                    >
+                    <span className="w-10 h-10 text-xl bg-hoverColor border-[1px] border-textGreen rounded-full inline-flex
+                  items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+                  transition-all duration-300">
                       <FaTwitch />
                     </span>
                   </motion.a>
                 </div>
               </div>
-              <motion.a
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, ease: "easeIn" }}
-                className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
-                href="mailto:bispobispocruz@gmail.com"
-              >
-                <p>Contact-me</p>
-              </motion.a>
             </motion.div>
           </div>
         )}
