@@ -22,7 +22,7 @@ const Banner = () => {
       >
         Gabriel Bispo.{" "}
         <span className="text-textDark mt-2 lgl:mt-4">
-          I build things for the web
+          I Develop improvements
         </span>
       </motion.h1>
       <motion.p
@@ -31,26 +31,32 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        Sou um desenvolvedor web com mais de 2 anos de experiência em React.
-        Tenho uma base sólida em desenvolvimento front-end e sou hábil na
-        criação de aplicações web fáceis de usar e responsivas usando React e
-        seu ecossistema.{" "}
-        <a href="https://github.com/Bixpo" target="_blank"><span className="text-textGreen inline-flex 
+        Sou um desenvolvedor Full-Stack com mais de 5 anos de experiência na
+        área de desenvolvimento de software. Possuo uma base sólida tanto em
+        front-end quanto em back-end,e sou especializado na criação de
+        aplicações web intuitivas e responsivas. Utilizo frameworks modernos
+        para melhorar a funcionalidade e a performance das aplicações,
+        garantindo uma experiência de usuário excepcional e um código eficiente.{" "}
+        <a href="https://github.com/Bixpo" target="_blank">
+          <span
+            className="text-textGreen inline-flex 
         relative cursor-pointer 
-        h-7 group">
-        Saiba mais
-        <span className="absolute w-full h-[1px] bg-textGreen left-0 
-        bottom-1-translate-x-[110%] group-hover:translate-x-0 transition-transform"></span>
-        </span></a> 
+        h-7 group"
+          >
+            Saiba mais
+          </span>
+        </a>
       </motion.p>
       <motion.button
-        initial= {{ y: 10, opacity: 0 }}
-        animate= {{ y: 0, opacity: 1 }}
-        transition= {{ duration: 0.5, delay: 0.9 }}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.9 }}
         className="w-52 h-14 text-sm font-titleFont border border-textGreen
       rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
       >
-        Confira meu projeto!
+        <a href="https://github.com/Bixpo" target="_blank">
+        Confira meus projetos!
+        </a>
       </motion.button>
     </section>
   );

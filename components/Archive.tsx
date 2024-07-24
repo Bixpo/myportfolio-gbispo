@@ -16,18 +16,19 @@ const Archive = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
         <ArchivesCard
-          title="Calendário"
-          des=" Um Calenário que desenvolvi para adicionar em um projeto da empresa
-          que trabalho atualmente, onde ele consegue marcar eventos nas datas
-          desejadas e editar e remover"
-          listItem={["Html", "Css", "JavaScript"]}
-          link="https://github.com/Bixpo/calendario"
+          title="Encurtamento de URLs"
+          des="Desenvolvi um sistema de encurtamento de URLs com o objetivo de transformar links longos e complexos em URLs
+          mais curtas e fáceis de compartilhar. Este sistema permite que
+          os usuários insiram um link original e recebam uma versão encurtada."
+          listItem={["NodeJs", "Docker", "JavaScript"]}
+          link="https://github.com/Bixpo/Sistema_encurtamentos_URLS"
         />
         <ArchivesCard
           title="Calculadora"
-          des=" Calculadora que desenvolvi atravéz de um curso para aprender um pouco mais sobre lógica."
-          listItem={["Html", "Css", "JavaScript"]}
-          link="https://github.com/Bixpo/CalculadoraJS"
+          des="A API foi projetada utilizando o framework NestJS, proporcionando uma arquitetura robusta e escalável. Ela simula as seguintes operações principais:
+          Cadastro de Usuário, Edição Exclução e Crianação de Token."
+          listItem={["NestJ", "TypeOrm", "JavaScript"]}
+          link="https://github.com/Bixpo/Api_Nest"
         />
         <ArchivesCard
           title="ViaCEP"

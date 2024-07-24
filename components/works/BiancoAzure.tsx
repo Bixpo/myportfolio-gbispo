@@ -10,7 +10,8 @@ const BiancoAzure = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        TI <span className="text-textGreen tracking-wide">@BiancoAzure</span>
+        DEV Full-Stack{" "}
+        <span className="text-textGreen tracking-wide">@BiancoAzure</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
         Out 2022 - Present
@@ -20,27 +21,23 @@ const BiancoAzure = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Bianco Azure é uma empresa que vende aparelhos respiratórios.
+          Desenvolvimento de aplicações completas para otimização de processos
+          empresariais.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Trabalho como TI deles oferecendo suporte tanto na parte de infra como
-          na parte de desenvolvimento.
+          Responsável pelo desenvolvimento e manutenção de interfaces de usuário
+          (front-end) e pela lógica de negócio e integração de sistemas
+          (back-end).
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          {/* Ja mexi no servidor deles ajudando a montar, configurar câmeras,
-          ajudar a estruturar site do e-commerce, blog, criar software para
-          estoque, sistema de visitas, estruturar cabeamento na empresa, montar
-          switch e roteador, entre outras tarefas. */}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut,
-          corrupti, dolores eligendi aperiam qui facilis harum, debitis
-          repellendus maxime possimus. Beatae optio eligendi porro
-          necessitatibus error consequuntur, ex quas
+          Integração de aplicações com bancos de dados, garantindo a eficiência
+          e segurança na manipulação dos dados.
         </li>
       </ul>
     </motion.div>

@@ -15,7 +15,7 @@ const LeftSide = () => {
           </span>
         </a>
         <a
-          href="https://www.linkedin.com/in/gabriel-bispo-0241a0292/"
+          href="https://www.linkedin.com/in/gabriel-bispo-684b86238"
           target="_blank"
         >
           <span

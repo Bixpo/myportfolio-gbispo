@@ -1,7 +1,6 @@
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-
-import { gabriel } from "@/public/assets";
+import Gabriel from "@/public/assets/images/Gabriel.jpeg";
 
 import { RiJavascriptFill } from "react-icons/ri";
 import { RiReactjsFill } from "react-icons/ri";
@@ -13,6 +12,11 @@ import { DiAngularSimple } from "react-icons/di";
 import { DiSass } from "react-icons/di";
 import { IoLogoWordpress } from "react-icons/io";
 import { SiTailwindcss } from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+import { DiGithubBadge } from "react-icons/di";
+import { SiDotnet } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
+import { SiCsharp } from "react-icons/si";
 
 const About = () => {
   return (
@@ -21,25 +25,28 @@ const About = () => {
       className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
     >
       <SectionTitle title="About Me" titleNo="01" />
-      <div className="flex flex-col lgl:flex-row gap16">
+      <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-6">
           <p>
-            Olá! meu nome é Gabriel Da Cruz Bispo e gosto de criar coisas que
-            vivem na internet. Meu interesse em desenvolvimento web começou em
-            2018,<br></br>quando decidi descobrir como é feito sites da internet e suas
-            animações isso fez com que eu busca-se aprender mais sobre essa área
-            e sobre como é desenvolver algo próprio e de seu jeito.
+            Olá! Meu nome é Gabriel Da Cruz Bispo e tenho um profundo interesse
+            em criar soluções para a internet. Meu fascínio pelo desenvolvimento
+            começou em 2018,<br></br>quando resolvi entender como são construídas as
+            interfaces e os sites que utilizamos. Desde então, dediquei-me a
+            aprofundar meus conhecimentos nessa área e a desenvolver projetos
+            próprios, aplicando minhas ideias e criatividade.
           </p>
           <p>
             Avançando até hoje, tive o privilégio de trabalhar em uma empresa
-            grande de software onde fui aperfeiçando{" "}
+            grande de software onde fui aperfeiçoando{" "}
             <span className="text-textGreen">
               minhas skills e competências.
             </span>
           </p>
           <p>
             Sempre estou buscando ficar por dentro de atualizações de
-            bibliotecas de<br />software para sempre estar por dentro das {""}
+            bibliotecas de
+            <br />
+            software para sempre estar por dentro das {""}
             <span className="text-textGreen">
               atualizações das linguagens de programação.
             </span>
@@ -109,15 +116,47 @@ const About = () => {
               </span>
               Tailwind CSS
             </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <DiMysql />
+              </span>
+              MySQL
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <DiGithubBadge />
+              </span>
+              Git
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <SiDotnet />
+              </span>
+              .NET
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <SiNestjs />
+              </span>
+              NestJS
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <SiCsharp />
+              </span>
+              C#
+            </li>
           </ul>
         </div>
         <div className="w-full lgl:w-1/4 h-80 relative group">
-          <div className="absolute w-full h-80 -left-0.50 -top-1 -right-8 rounded-lg">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+          <div className="absolute w-full h-full rounded-lg overflow-hidden">
+            <div className="w-full h-full relative z-20 flex">
               <Image
-                className="rounded-lg h-full object-cover"
-                src={gabriel}
+                className="rounded-lg object-cover"
+                src={Gabriel}
                 alt="profileImg"
+                layout="fill"
+                objectFit="cover"
               />
             </div>
           </div>

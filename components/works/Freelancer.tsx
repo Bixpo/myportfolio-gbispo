@@ -27,7 +27,7 @@ const Freelancer = () => {
             <TiArrowForward />
           </span>
           Sempre busco ir atrás de clientes oferecendo meus serviços como
-          dev-web.
+          Dev.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

@@ -13,33 +13,27 @@ const Totvs = () => {
         DEV <span className="text-textGreen tracking-wide">@Totvs</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Out 2021 - Present
+        DE 24/11/20 A 22/04/22
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Trabalhei como menor-aprendiz durante 1 ano e meio atuando em várias
-          áreas sendo elas: documentador de software, tester e desenvolvedor
+          Desenvolvimento de softwares internos para a empresa
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Como documentador de software, eu tinha que documentar como foi
-          realizado o desenvolvimento e todos os testes dele junto com o time de
-          desenvolvimento e teste para que ficasse salvo em uma documentação do
-          software.
+          Análise e teste de softwares para identificar e corrigir bugs e
+          problemas de desempenho.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Como tester eu realizava testes na aplicação para encontar bugs e
-          assim passar para o desenvolvedor corrigi-los. Como desenvolvedor eu
-          comecei a participar de projetos pequenos na empresa criando tabelas,
-          inputs e chegando a mexer no web-desing de sites.
+          Documentação detalhada dos softwares após a fase de testes.
         </li>
       </ul>
     </motion.div>
