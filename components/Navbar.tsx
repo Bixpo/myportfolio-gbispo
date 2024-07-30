@@ -301,7 +301,7 @@ const Navbar = () => {
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1.4, ease: "easeIn" }}
-                    href="https://www.instagram.com/bispo.gabriel/"
+                    href="https://www.instagram.com/bixpo_bixpo/"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-hoverColor border-[1px] border-textGreen rounded-full inline-flex

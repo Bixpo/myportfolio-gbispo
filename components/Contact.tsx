@@ -10,7 +10,7 @@ const Contact = () => {
         04. What s Next?
       </p>
       <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
-      <p className="max-w-[600px] text-center text-textDark">
+      <p className="max-w-[600px] text-center text-textDark">                                    
         Caso esteja interessado em saber mais sobre mim ou meus serviços,
         minha caixa de entrada estará sempre aberta. Se você tiver alguma dúvida
         ou apenas quiser dizer olá, farei o possível para entrar em contato com
